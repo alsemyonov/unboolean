@@ -28,5 +28,6 @@ module Unboolean
     def inspect
       'maybe'
     end
+    alias to_s inspect
   end
 end

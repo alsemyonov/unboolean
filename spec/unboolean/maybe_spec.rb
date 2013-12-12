@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'maybe' do
+describe maybe do
   subject(:maybe) { Unboolean::Maybe.instance }
 
   its(:inspect) { should == 'maybe' }
