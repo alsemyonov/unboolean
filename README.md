@@ -64,4 +64,4 @@ maybe ^ maybe # => maybe # Do you think it may not be? No! Everything may be.
 
 ## Copyright
 
-© [Alexander Semyonov](mailto:al@semyonov.us), 2013
+© [Alexander Semyonov](mailto:al@semyonov.us), 2013, MIT License.

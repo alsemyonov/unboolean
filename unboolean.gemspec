@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = %w(al@semyonov.us)
   spec.description   = %q{Boolean is too boring. Let’s add Maybe value.}
   spec.summary       = %q{True, false, or Maybe?}
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/alsemyonov/unboolean'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
