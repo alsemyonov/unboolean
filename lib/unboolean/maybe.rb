@@ -26,5 +26,9 @@ module Unboolean
     def ==(*)
       Maybe.new
     end
+
+    def inspect
+      'maybe'
+    end
   end
 end

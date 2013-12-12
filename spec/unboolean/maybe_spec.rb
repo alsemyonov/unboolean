@@ -21,4 +21,6 @@ describe Unboolean::Maybe do
   specify('maybe XOR true may be maybe') { expect(maybe ^ true).to eql(maybe) }
   specify('maybe XOR false may be maybe') { expect(maybe ^ false).to eql(maybe) }
   specify('maybe XOR maybe may be maybe') { expect(maybe ^ maybe).to eql(maybe) }
+
+  its(:inspect) { should == 'maybe' }
 end

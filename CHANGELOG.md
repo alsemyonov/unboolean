@@ -1,3 +1,7 @@
+== 0.0.2.pre
+
+* Better inspect value for `Unboolean::Maybe` instance.
+
 == 0.0.1
 
 * Namespace `Unboolean`
