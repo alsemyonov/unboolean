@@ -1,5 +1,4 @@
-require 'unboolean/version'
-require 'singleton'
+require 'unboolean'
 
 module Unboolean
   class Maybe

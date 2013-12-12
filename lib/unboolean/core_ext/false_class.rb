@@ -1,16 +1,5 @@
-require 'unboolean'
-require 'unboolean/maybe'
+require 'unboolean/false'
 
 class FalseClass
-  def |(other)
-    other.is_a?(Unboolean::Maybe) ? other | self : !!(other)
-  end
-
-  def ^(other)
-    other.is_a?(Unboolean::Maybe) ? other ^ self : (!other).is_a?(FalseClass)
-  end
-
-  def ==(other)
-    other.is_a?(Unboolean::Maybe) ? other == self : (!!other).is_a?(FalseClass)
-  end
+  include Unboolean::False
 end
