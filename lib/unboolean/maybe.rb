@@ -3,29 +3,26 @@ require 'singleton'
 
 module Unboolean
   class Maybe
-    # May be singleton?
-    def self.new
-      @__unboolean_maybe_instance ||= super
-    end
+    include Singleton
 
     def &(value)
-      value.is_a?(FalseClass) ? false : Maybe.new
+      value.is_a?(FalseClass) ? false : Maybe.instance
     end
 
     def |(value)
-      value.is_a?(TrueClass) ? true : Maybe.new
+      value.is_a?(TrueClass) ? true : Maybe.instance
     end
 
     def ^(*)
-      Maybe.new
+      Maybe.instance
     end
 
     def !
-      Maybe.new
+      Maybe.instance
     end
 
     def ==(*)
-      Maybe.new
+      Maybe.instance
     end
 
     def inspect

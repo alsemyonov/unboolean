@@ -3,6 +3,6 @@ require 'unboolean/maybe'
 
 module Kernel
   def maybe
-    @__unboolean_maybe ||= Unboolean::Maybe.new
+    Unboolean::Maybe.instance
   end
 end
