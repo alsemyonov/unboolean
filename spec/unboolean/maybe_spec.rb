@@ -5,33 +5,33 @@ describe 'maybe' do
 
   its(:inspect) { should == 'maybe' }
 
-  specify('#=> maybe') { expect(maybe).to eql(maybe) }
+  specify('#=> maybe') { expect(subject).to eql(maybe) }
 
   context '!' do
-    specify('#=> maybe') { expect(!maybe).to eql(maybe) }
+    specify('#=> maybe') { expect(!subject).to eql(maybe) }
   end
 
   context '==' do
-    specify('maybe #=> maybe') { expect(maybe == maybe).to eql(maybe) }
-    specify('true #=> maybe') { expect(maybe == true).to eql(maybe) }
-    specify('false #=> maybe') { expect(maybe == false).to eql(maybe) }
+    specify('true #=> maybe') { expect(subject == true).to eql(maybe) }
+    specify('false #=> maybe') { expect(subject == false).to eql(maybe) }
+    specify('maybe #=> maybe') { expect(subject == maybe).to eql(maybe) }
   end
 
   context '&' do
-    specify('true #=> maybe') { expect(maybe & true).to eql(maybe) }
-    specify('false #=> false') { expect(maybe & false).to eql(false) }
-    specify('maybe #=> maybe') { expect(maybe & maybe).to eql(maybe) }
+    specify('true #=> maybe') { expect(subject & true).to eql(maybe) }
+    specify('false #=> false') { expect(subject & false).to eql(false) }
+    specify('maybe #=> maybe') { expect(subject & maybe).to eql(maybe) }
   end
 
   context '|' do
-    specify('true #=> true') { expect(maybe | true).to eql(true) }
-    specify('false #=> maybe') { expect(maybe | false).to eql(maybe) }
-    specify('maybe #=> maybe') { expect(maybe | maybe).to eql(maybe) }
+    specify('true #=> true') { expect(subject | true).to eql(true) }
+    specify('false #=> maybe') { expect(subject | false).to eql(maybe) }
+    specify('maybe #=> maybe') { expect(subject | maybe).to eql(maybe) }
   end
 
   context '^' do
-    specify('true #=> maybe') { expect(maybe ^ true).to eql(maybe) }
-    specify('false #=> maybe') { expect(maybe ^ false).to eql(maybe) }
-    specify('maybe #=> maybe') { expect(maybe ^ maybe).to eql(maybe) }
+    specify('true #=> maybe') { expect(subject ^ true).to eql(maybe) }
+    specify('false #=> maybe') { expect(subject ^ false).to eql(maybe) }
+    specify('maybe #=> maybe') { expect(subject ^ maybe).to eql(maybe) }
   end
 end

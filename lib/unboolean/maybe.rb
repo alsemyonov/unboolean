@@ -3,6 +3,7 @@ require 'singleton'
 
 module Unboolean
   class Maybe
+    # May be singleton?
     def self.new
       @__unboolean_maybe_instance ||= super
     end

@@ -1,6 +1,9 @@
-== 0.0.2.pre
+== 0.0.2
 
 * Better inspect value for `Unboolean::Maybe` instance.
+* Fix `true` and `false` methods: `:&`, `:|`, `:^`, `:!` (covered with RSpec)
+* Structured code has a bit more logic. Maybe
+* 100%-coverage of code
 
 == 0.0.1
 

@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 gemspec
 
 group :documentation do
-  gem 'yard'
   gem 'redcarpet', platforms: :ruby
   gem 'kramdown', platforms: :jruby
 end

@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/alsemyonov/unboolean.png)](https://travis-ci.org/alsemyonov/unboolean)
 [![Dependency Status](https://gemnasium.com/alsemyonov/unboolean.png)](https://gemnasium.com/alsemyonov/unboolean)
 [![Code Climate](https://codeclimate.com/github/alsemyonov/unboolean.png)](https://codeclimate.com/github/alsemyonov/unboolean)
+[![Coverage Status](https://coveralls.io/repos/alsemyonov/unboolean/badge.png)](https://coveralls.io/r/alsemyonov/unboolean)
 [![Roadmap and Changelog](https://roadchange.com/alsemyonov/unboolean/badge.png)](https://roadchange.com/alsemyonov/unboolean)
 
 Boolean is too boring. Let’s add `maybe` to `true` and `false`.
