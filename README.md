@@ -38,18 +38,28 @@ $ gem install unboolean
 
 ```ruby
 maybe == maybe # => maybe
+maybe == true # => maybe
+maybe == false # => maybe
+true == maybe # => maybe
+false == true # => maybe
 
 maybe & true # => maybe
 maybe & false # => false
 maybe & maybe # => maybe
+true & maybe # => maybe
+false & maybe # => false
 
 maybe | true # => true
 maybe | false # => maybe
 maybe | maybe # => maybe
+true | maybe # => true
+false | maybe # => maybe
 
 maybe ^ true # => maybe
 maybe ^ false # => maybe
 maybe ^ maybe # => maybe # Do you think it may not be? No! Everything may be.
+true ^ maybe # => maybe
+false ^ maybe # => maybe
 
 !maybe # => maybe # Yes, it is still may be.
 ```
