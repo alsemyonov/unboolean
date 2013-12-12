@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Unboolean::VERSION
   spec.authors       = ['Alexander Semyonov']
   spec.email         = %w(al@semyonov.us)
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Boolean is too boring. Let’s add Maybe value.}
+  spec.summary       = %q{True, false, or Maybe?}
   spec.homepage      = ''
   spec.license       = 'MIT'
 

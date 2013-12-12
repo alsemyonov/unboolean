@@ -1,5 +1,7 @@
 require 'unboolean/version'
 
 module Unboolean
-  # Your code goes here...
 end
+
+require 'unboolean/maybe'
+require 'unboolean/core_ext'

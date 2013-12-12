@@ -1,6 +1,6 @@
 # Unboolean
 
-TODO: Write a gem description
+Boolean is too boring. Let’s add `maybe` to `true` and `false`.
 
 ## Installation
 
@@ -18,7 +18,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+maybe == maybe # => maybe
+
+maybe & true # => maybe
+maybe & false # => false
+maybe & maybe # => maybe
+
+maybe | true # => true
+maybe | false # => maybe
+maybe | maybe # => maybe
+
+maybe ^ true # => maybe
+maybe ^ false # => maybe
+maybe ^ maybe # => maybe # Do you think it may not be? No! Everything may be.
+
+!maybe # => maybe # Yes, it is still may be.
+```
 
 ## Contributing
 
