@@ -76,3 +76,7 @@ false ^ maybe # => maybe
 ## Copyright
 
 © [Alexander Semyonov](mailto:al@semyonov.us), 2013, MIT License.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alsemyonov/unboolean/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
